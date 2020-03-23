@@ -8,8 +8,7 @@ let [puntos, setPuntos] = useState()
 let usuario;
 
 let actualizar = () => {
-       
-    if(localStorage.user != undefined){
+        if(localStorage.user != undefined){
 
         usuario = JSON.parse(localStorage.user)
         fetch('https://tare-online.firebaseio.com/alumno/'+usuario.uid+'.json')//direccion de la base de datos
